@@ -32,21 +32,25 @@ main{
     margin-left: 4.16%;
     margin-top: 2.5vh;
     border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .personagem img{
-    height: auto;
-    width: 100%;
+    height: 100%;
+    width: auto;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out;
 }
-    .personagem img:hover{
-        filter:grayscale(0%);
+.personagem img:hover{
+    filter: grayscale(0%);
 }
-#nomes-pers {
+#nomes-pers{
     width: 100%;
     height: auto;
     float: left;
     /* background: purple; */
-    margin-top: 2vh;
-}    
+}
 #nomes-pers h2{
     width: 15%;
     /* background: #fff; */
@@ -55,7 +59,7 @@ main{
     text-align: center;
     text-transform: uppercase;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: purple
+    color: purple;
 }
 #video{
     width: 100%;
